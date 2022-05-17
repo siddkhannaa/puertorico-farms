@@ -1,0 +1,5 @@
+env
+out
+
+src/config.py
+src/__pycache__
