@@ -1,5 +1,6 @@
 from urllib.parse import quote
-from services import get_data
+
+from services import get_data, graph_data
 
 parameters = 'source_desc=SURVEY' +  \
                 '&' + quote('sector_desc=FARMS & LANDS & ASSETS') + \
@@ -14,3 +15,4 @@ parameters = 'source_desc=SURVEY' +  \
                 '&format=CSV'
 
 get_data(parameters, 'test')
+graph_data("../out/test.csv")
